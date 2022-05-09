@@ -1,0 +1,35 @@
+/* CSS Reset */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+
+.leftbar {
+    width: 45vw;
+    position: fixed;
+}
+
+section,
+footer {
+    color: white;
+    min-width: 50vw;
+    padding: 15px;
+    margin-left: 45vw;
+    background-color: #373b40;
+    border-bottom: 0.5px solid grey;
+    /* margin-right: 10vw; */
+    min-height: 50vh;
+}
+.rightbar {
+    color: white;
+    border: 0.5px solid grey;
+    background-color: #373b40;
+    min-height: 100vh;
+    padding: 15px;
+    width: 10vw;
+    margin-left: 93vw;
+    position: fixed;
+}
