@@ -16,6 +16,146 @@
         <title>Vusumzi | Portfolio</title>
     </head>
     <body>
+        <!-- Start Navigation -->
+        <nav class="navbar navbar-expand-lg fixed-top navbar-dark mx-auto">
+            <div class="container-fluid container-lg">
+                <a class="navbar-brand" href="#">Vusumzi</a>
+                <button
+                    class="navbar-toggler"
+                    type="button"
+                    data-bs-toggle="offcanvas"
+                    data-bs-target="#offcanvas-nav"
+                >
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div
+                    class="collapse navbar-collapse justify-content-end"
+                    id="nav-links"
+                >
+                    <ul class="navbar-nav">
+                        <li>
+                            <a
+                                class="nav-link active"
+                                aria-current="page"
+                                href="#landing"
+                                >Home</a
+                            >
+                        </li>
+                        <li><a class="nav-link" href="#about">About</a></li>
+                        <li><a class="nav-link" href="#resume">Resume</a></li>
+                        <li>
+                            <a class="nav-link" href="#portfolio">Portfolio</a>
+                        </li>
+                        <li>
+                            <a class="nav-link" href="#testimonials"
+                                >Testimonials</a
+                            >
+                        </li>
+                        <li>
+                            <a class="nav-link" href="#contact">Contact</a>
+                        </li>
+                        <li class="d-none d-lg-inline-block">
+                            <a
+                                class="nav-link btn btn-outline-secondary rounded-pill ms-4 px-4"
+                                href="#"
+                                target="_blank"
+                                >Download CV</a
+                            >
+                        </li>
+                    </ul>
+                </div>
+                <!-- Offcanvas - to be replaced by JavaScript later -->
+                <div
+                    class="offcanvas offcanvas-top bg-dark text-white vh-100"
+                    tabindex="-1"
+                    id="offcanvas-nav"
+                    aria-labelledby="offcanvas-navLabel"
+                >
+                    <div class="offcanvas-header">
+                        <div
+                            class="w-100 d-flex justify-content-between px-3 mv-3"
+                        >
+                            <a
+                                data-bs-toggle="offcanvas"
+                                class="navbar-brand"
+                                href="#"
+                                >Vusumzi</a
+                            >
+                            <button
+                                type="button"
+                                class="btn-close text-white"
+                                data-bs-dismiss="offcanvas"
+                                aria-label="Close"
+                            ></button>
+                        </div>
+                    </div>
+                    <div
+                        class="offcanvas-body d-flex align-items-center justify-content-center"
+                    >
+                        <ul class="navbar-nav">
+                            <li>
+                                <a
+                                    class="nav-link active"
+                                    data-bs-dismiss="offcanvas"
+                                    aria-current="page"
+                                    href="#landing"
+                                    >Home</a
+                                >
+                            </li>
+                            <li>
+                                <a
+                                    class="nav-link"
+                                    data-bs-dismiss="offcanvas"
+                                    href="#about"
+                                    >About</a
+                                >
+                            </li>
+                            <li>
+                                <a
+                                    class="nav-link"
+                                    data-bs-dismiss="offcanvas"
+                                    href="#resume"
+                                    >Resume</a
+                                >
+                            </li>
+                            <li>
+                                <a
+                                    class="nav-link"
+                                    data-bs-dismiss="offcanvas"
+                                    href="#portfolio"
+                                    >Portfolio</a
+                                >
+                            </li>
+                            <li>
+                                <a
+                                    class="nav-link"
+                                    data-bs-dismiss="offcanvas"
+                                    href="#testimonials"
+                                    >Testimonials</a
+                                >
+                            </li>
+                            <li>
+                                <a
+                                    class="nav-link"
+                                    data-bs-dismiss="offcanvas"
+                                    href="#contact"
+                                    >Contact</a
+                                >
+                            </li>
+                            <li class="d-none d-lg-inline-block">
+                                <a
+                                    class="nav-link btn btn-outline-secondary rounded-pill ms-4 px-4"
+                                    href="http://"
+                                    >Download CV</a
+                                >
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- End offcanvas -->
+            </div>
+        </nav>
+        <!-- End Nav -->
         <div class="leftbar">
             <img
                 src="https://picsum.photos/500/700?grayscale"
@@ -34,7 +174,7 @@
         <section id="resume">
             <div class="container-fluid container-lg">resume</div>
         </section>
-        <section id="projects">
+        <section id="portfolio">
             <div class="container-fluid container-lg">projects</div>
         </section>
         <section id="testimonials">
