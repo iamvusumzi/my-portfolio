@@ -32,7 +32,7 @@
                     class="collapse navbar-collapse justify-content-end"
                     id="nav-links"
                 >
-                    <ul class="navbar-nav">
+                    <ul class="navbar-nav d-flex align-items-center">
                         <li>
                             <a
                                 class="nav-link active"
@@ -155,7 +155,9 @@
                 <!-- End offcanvas -->
             </div>
         </nav>
+
         <!-- End Nav -->
+
         <div class="leftbar">
             <img
                 src="https://picsum.photos/500/700?grayscale"
@@ -164,28 +166,57 @@
             />
         </div>
         <div class="rightbar">Rightbar</div>
-        <section id="landing">
-            <div class="container-fluid container-lg">landing</div>
-        </section>
+        <!-- For overflow hidden functionality -->
+        <!-- <div class="overflow d-none d-lg-block"></div> -->
+        <!-- Ennd overflow functionality -->
+        <div class="wrapper">
+            <section id="landing">
+                <div class="container-fluid container-lg">
+                    <div class="row heading">
+                        <h1 class="d-flex flex-column">
+                            <span>Vusumzi</span> <span> Msengana</span>
+                        </h1>
+                        <h2>Aspiring Full-Stack Web Developer</h2>
+                    </div>
+                    <div class="row landing-text mt-4">
+                        <p class="col-12 col-9">
+                            Lorem ipsum dolor, sit amet consectetur adipisicing
+                            elit. Incidunt optio voluptatem officia mollitia
+                            unde, nobis assumenda fuga pariatur consequuntur,
+                            nihil odit culpa blanditiis nisi autem ipsa,
+                            delectus odio! Nisi recusandae quisquam quo animi
+                            modi ipsam doloremque inventore fugit autem. Ducimus
+                            est atque doloribus expedita, accusantium
+                            necessitatibus hic explicabo omnis nulla!
+                        </p>
+                    </div>
+                    <a
+                        class="btn btn-outline-secondary rounded-pill mt-4"
+                        href="#contact"
+                        >Contact Me</a
+                    >
+                </div>
+            </section>
 
-        <section id="about">
-            <div class="container-fluid container-lg">about</div>
-        </section>
-        <section id="resume">
-            <div class="container-fluid container-lg">resume</div>
-        </section>
-        <section id="portfolio">
-            <div class="container-fluid container-lg">projects</div>
-        </section>
-        <section id="testimonials">
-            <div class="container-fluid container-lg">testimonials</div>
-        </section>
-        <section id="contact">
-            <div class="container-fluid container-lg">contact</div>
-        </section>
-        <footer>
-            <div class="container">Footer</div>
-        </footer>
+            <section id="about">
+                <div class="container-fluid container-lg">about</div>
+            </section>
+            <section id="resume">
+                <div class="container-fluid container-lg">resume</div>
+            </section>
+            <section id="portfolio">
+                <div class="container-fluid container-lg">projects</div>
+            </section>
+            <section id="testimonials">
+                <div class="container-fluid container-lg">testimonials</div>
+            </section>
+            <section id="contact">
+                <div class="container-fluid container-lg">contact</div>
+            </section>
+            <footer>
+                <div class="container">Footer</div>
+            </footer>
+        </div>
         <!-- SCRIPTS -->
 
         <!-- For animation -->
