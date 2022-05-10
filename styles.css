@@ -33,3 +33,34 @@ footer {
     margin-left: 93vw;
     position: fixed;
 }
+
+@media screen and (max-width: 1280px) {
+    .leftbar {
+        width: 30vw;
+        overflow: hidden;
+    }
+    section,
+    footer {
+        min-width: 65vw;
+        margin-left: 30vw;
+    }
+    .rightbar {
+        width: 15vw;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .leftbar {
+        width: 100%;
+        height: 70vh;
+        position: static;
+    }
+    section,
+    footer {
+        width: 100%;
+        margin: 0;
+    }
+    .rightbar {
+        display: none;
+    }
+}
