@@ -87,6 +87,7 @@ nav {
     background-color: #585d65;
     /* padding: 15px; */
     height: 75px;
+    margin: 40px auto;
     margin-top: 40px;
     border-radius: 60px;
 }
@@ -149,7 +150,8 @@ h3 {
     position: relative;
 } */
 
-#education .owl-nav {
+#education .owl-nav,
+#testimonials .owl-nav {
     margin-top: -135px;
     font-size: 35px;
 
@@ -161,7 +163,8 @@ h3 {
     /* bottom: 80px; */
 }
 
-#education .owl-nav button {
+#education .owl-nav button,
+#testimonials .owl-nav button {
     width: 64px;
     height: 64px;
     border: 0.5px solid grey;
@@ -196,12 +199,12 @@ h3 {
 }
 
 /* Portfolio */
-#portfolio .project {
+#portfolio .image {
     position: relative;
 }
 #portfolio .project-details {
     background: rgba(104, 224, 207, 0.9);
-    color: white;
+    color: #373b40;
     position: absolute;
     top: 0;
     left: 0;
@@ -217,18 +220,60 @@ h3 {
     opacity: 0;
     transition: all 0.2s linear;
 }
+/* #porfolio .project-details p {
+    text-align: center;
+} */
+
+#portfolio .project:hover {
+    color: #68e0cf;
+}
+
+#portfolio .project-title {
+    letter-spacing: 0.5px;
+    padding-top: 15px;
+    text-align: center;
+    font-size: 18px;
+    font-weight: 550;
+}
 
 #portfolio .project:hover .project-details {
-    transform: scale(0.85);
+    transform: scale(0.9);
     opacity: 1;
 }
 
 .project-details a {
-    color: white;
+    /* color: white; */
 }
 
-/* Contact */
+/* Testimonial */
+#testimonials .person-image {
+    width: 120px;
+    /* height: 120px; */
+    object-fit: cover;
+}
+#testimonials .person-image img {
+    border-radius: 50%;
+}
+#testimonials .title h4.name {
+    font-size: 20px;
+    font-weight: 600;
+}
 
+#testimonials .title h4.occupation {
+    font-size: 12px;
+    font-weight: normal;
+    text-transform: uppercase;
+    color: #68e0cf;
+}
+#testimonials .quote {
+    font-size: 32px;
+    font-weight: 800;
+}
+
+#testimonials .quote-text {
+    margin-top: -40px;
+}
+/* Contact */
 #contact form .row label {
     margin: 25px 0 -10px 25px;
     /* margin-bottom: -10px; */
@@ -292,9 +337,10 @@ footer p:last-child {
     }
 }
 
-@media screen and (max-width: 991.5px) {
+@media screen and (max-width: 992px) {
     /* Layout */
     .leftbar {
+        margin: 0;
         width: 100%;
         height: 70vh;
         position: static;
@@ -306,9 +352,9 @@ footer p:last-child {
     }
     /* Nav */
     nav {
-        max-width: 100%;
+        width: 100vw;
         border-radius: 0;
-        margin-top: 0;
+        margin: 0;
         padding: 20px;
     }
     nav .navbar .navbar-nav {
