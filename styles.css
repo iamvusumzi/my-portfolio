@@ -83,7 +83,7 @@ a.btn {
 /* Navigation */
 
 nav {
-    max-width: 93%;
+    width: 93%;
     background-color: #585d65;
     /* padding: 15px; */
     height: 75px;
@@ -126,12 +126,13 @@ h3 {
 .period {
     color: #68e0cf;
     text-align: center;
-    height: fit-content;
-    width: 70px;
-    padding: 2px;
+    height: 70px;
+    width: fit-content;
+    margin-right: 10px;
     font-size: 11px;
     /* display: block; */
-    transform: rotate(90deg);
+    writing-mode: vertical-rl;
+    /* transform: rotate(180deg); */
 }
 .occupation {
     margin-bottom: 4px;
@@ -247,9 +248,10 @@ h3 {
 
 /* Testimonial */
 #testimonials .person-image {
-    width: 120px;
-    /* height: 120px; */
+    width: 70px;
+    height: 70px;
     object-fit: cover;
+    margin-right: 10px;
 }
 #testimonials .person-image img {
     border-radius: 50%;
@@ -379,13 +381,35 @@ footer p:last-child {
 
 @media screen and (max-width: 768px) {
     #landing .heading h1 {
+        font-size: 35px;
+        padding: 80px 20px;
+        height: auto;
+        margin: -190px auto;
         border-radius: 300px;
         width: 100%;
+    }
+    h2 {
+        font-size: 34px;
+        text-align: center;
+    }
+    h3 {
+        font-size: 14px;
+        text-align: center;
     }
 
     #contact form button {
         width: 100%;
     }
+    /* Education and  */
+    .period {
+        transform: rotate(0deg);
+        writing-mode: horizontal-tb;
+        height: auto;
+        width: fit-content;
+        text-align: left;
+        margin-bottom: 5px;
+    }
+
     .bordered {
         margin-top: 30px;
     }
