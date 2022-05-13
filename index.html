@@ -28,14 +28,14 @@
         <!-- Start Navigation -->
         <nav class="navbar navbar-expand-lg fixed-top navbar-dark">
             <div class="container-fluid container-lg">
-                <a class="navbar-brand" href="#">Vusumzi</a>
+                <a class="navbar-brand" id="logo" href="#landing">Vusumzi</a>
                 <button
                     class="navbar-toggler"
                     type="button"
                     data-bs-toggle="offcanvas"
                     data-bs-target="#offcanvas-nav"
                 >
-                    <span class="navbar-toggler-icon"></span>
+                    <span id="nav-toggler" class="navbar-toggler-icon"></span>
                 </button>
                 <div
                     class="collapse navbar-collapse justify-content-end"
@@ -85,12 +85,14 @@
                             class="w-100 d-flex justify-content-between px-3 mv-3"
                         >
                             <a
+                                id="logo"
                                 data-bs-toggle="offcanvas"
                                 class="navbar-brand"
                                 href="#"
                                 >Vusumzi</a
                             >
                             <button
+                                id="offcanvas-close"
                                 type="button"
                                 class="btn-close text-white"
                                 data-bs-dismiss="offcanvas"
@@ -101,7 +103,7 @@
                     <div
                         class="offcanvas-body d-flex align-items-center justify-content-center"
                     >
-                        <ul class="navbar-nav">
+                        <ul class="navbar-nav" id="offcanvas-links">
                             <li>
                                 <a
                                     class="nav-link active"
@@ -197,7 +199,7 @@
             </ul>
         </div>
         <!-- For overflow hidden functionality -->
-        <!-- <div class="overflow d-none d-lg-block"></div> -->
+        <div class="overflow d-none d-lg-block"></div>
         <!-- Ennd overflow functionality -->
         <div class="wrapper">
             <section id="landing">
@@ -217,7 +219,7 @@
                         </p>
                     </div>
                     <a
-                        class="btn btn-outline-secondary rounded-pill mt-4"
+                        class="btn btn-secondary rounded-pill mt-4"
                         href="#contact"
                         >Contact Me</a
                     >
@@ -666,39 +668,15 @@
                                         src="./images/projects/restuarant.PNG"
                                         alt="Project1"
                                     />
-                                    <div
-                                        class="project-details"
-                                        data-aos="zoom-in"
-                                    >
-                                        <div class="project-text">
-                                            <p>
-                                                Built after a Bootstrap 5 class
-                                            </p>
-                                        </div>
-                                        <div class="project-links">
-                                            <a
-                                                class="btn"
-                                                href="https://mybootstrap-restaurant.netlify.app/"
-                                                target="_blank"
-                                            >
-                                                <i class="fa-solid fa-eye"></i>
-                                                <span class="project-option"
-                                                    >Live</span
-                                                >
-                                            </a>
-                                            <a
-                                                class="btn"
-                                                href="https://github.com/iamvusumzi/restaurant-mock"
-                                                target="_blank"
-                                            >
-                                                <i
-                                                    class="fa-brands fa-github"
-                                                ></i>
-                                                <span class="project-option"
-                                                    >Code</span
-                                                >
-                                            </a>
-                                        </div>
+                                    <div class="project-details">
+                                        <button
+                                            class="btn btn-light rounded-pill"
+                                            type="button"
+                                            data-bs-toggle="modal"
+                                            data-bs-target="#mock-restaurant"
+                                        >
+                                            View Details
+                                        </button>
                                     </div>
                                 </div>
 
@@ -713,41 +691,15 @@
                                         src="./images/projects/library-system.PNG"
                                         alt="Project1"
                                     />
-                                    <div
-                                        class="project-details"
-                                        data-aos="zoom-in"
-                                    >
-                                        <div class="project-text">
-                                            <p>
-                                                An online library system built
-                                                with Nodejs, Express.js and
-                                                MongoDB
-                                            </p>
-                                        </div>
-                                        <div class="project-links">
-                                            <a
-                                                class="btn"
-                                                href="https://rocky-island-86328.herokuapp.com/"
-                                                target="_blank"
-                                            >
-                                                <i class="fa-solid fa-eye"></i>
-                                                <span class="project-option"
-                                                    >Live</span
-                                                >
-                                            </a>
-                                            <a
-                                                class="btn"
-                                                href="https://github.com/iamvusumzi/library-system"
-                                                target="_blank"
-                                            >
-                                                <i
-                                                    class="fa-brands fa-github"
-                                                ></i>
-                                                <span class="project-option"
-                                                    >Code</span
-                                                >
-                                            </a>
-                                        </div>
+                                    <div class="project-details">
+                                        <button
+                                            class="btn btn-light rounded-pill"
+                                            type="button"
+                                            data-bs-toggle="modal"
+                                            data-bs-target="#library-system"
+                                        >
+                                            View Details
+                                        </button>
                                     </div>
                                 </div>
                                 <h4 class="project-title">Library System</h4>
@@ -761,40 +713,15 @@
                                         src="./images/projects/html-css-portfolio.PNG"
                                         alt="Project1"
                                     />
-                                    <div
-                                        class="project-details"
-                                        data-aos="zoom-in"
-                                    >
-                                        <div class="project-text">
-                                            <p>
-                                                A personal portfolio built with
-                                                HTML and CSS
-                                            </p>
-                                        </div>
-                                        <div class="project-links">
-                                            <a
-                                                class="btn"
-                                                href="https://vusumzi.netlify.app/"
-                                                target="_blank"
-                                            >
-                                                <i class="fa-solid fa-eye"></i>
-                                                <span class="project-option"
-                                                    >Live</span
-                                                >
-                                            </a>
-                                            <a
-                                                class="btn"
-                                                href="https://github.com/iamvusumzi/portfolio"
-                                                target="_blank"
-                                            >
-                                                <i
-                                                    class="fa-brands fa-github"
-                                                ></i>
-                                                <span class="project-option"
-                                                    >Code</span
-                                                >
-                                            </a>
-                                        </div>
+                                    <div class="project-details">
+                                        <button
+                                            class="btn btn-light rounded-pill"
+                                            type="button"
+                                            data-bs-toggle="modal"
+                                            data-bs-target="#html-css-portfolio"
+                                        >
+                                            View Details
+                                        </button>
                                     </div>
                                 </div>
                                 <h4 class="project-title">
@@ -810,40 +737,15 @@
                                         src="./images/projects/bootstrap-portfolio-mock.PNG"
                                         alt="Project1"
                                     />
-                                    <div
-                                        class="project-details"
-                                        data-aos="zoom-in"
-                                    >
-                                        <div class="project-text">
-                                            <p>
-                                                A personal portfolio built with
-                                                Bootstrap 5
-                                            </p>
-                                        </div>
-                                        <div class="project-links">
-                                            <a
-                                                class="btn"
-                                                href="https://boostrap-porfolio.netlify.app/"
-                                                target="_blank"
-                                            >
-                                                <i class="fa-solid fa-eye"></i>
-                                                <span class="project-option"
-                                                    >Live</span
-                                                >
-                                            </a>
-                                            <a
-                                                class="btn"
-                                                href="https://github.com/iamvusumzi/bootstrap-portfolio"
-                                                target="_blank"
-                                            >
-                                                <i
-                                                    class="fa-brands fa-github"
-                                                ></i>
-                                                <span class="project-option"
-                                                    >Code</span
-                                                >
-                                            </a>
-                                        </div>
+                                    <div class="project-details">
+                                        <button
+                                            class="btn btn-light rounded-pill"
+                                            type="button"
+                                            data-bs-toggle="modal"
+                                            data-bs-target="#bootstrap-portfolio"
+                                        >
+                                            View Details
+                                        </button>
                                     </div>
                                 </div>
                                 <h4 class="project-title">
@@ -1030,6 +932,7 @@
                     <div class="col-md-6">
                         <div class="container-fluid container-lg">
                             <form
+                                target="_blank"
                                 action="https://formspree.io/f/mrgjozej"
                                 method="post"
                             >
@@ -1039,7 +942,8 @@
                                         <span class="highlight">*</span></label
                                     >
                                     <input
-                                        class="rounded-pill"
+                                        required
+                                        class="rounded-pill form-control"
                                         type="text"
                                         name="name"
                                         placeholder="eg.. Vusumzi Msengana"
@@ -1051,6 +955,7 @@
                                         <span class="highlight">*</span></label
                                     >
                                     <input
+                                        required
                                         class="rounded-pill"
                                         type="email"
                                         name="email"
@@ -1063,6 +968,7 @@
                                         <span class="highlight">*</span></label
                                     >
                                     <textarea
+                                        required
                                         type="text"
                                         name="message"
                                         placeholder="Message"
@@ -1120,8 +1026,300 @@
                 </div>
             </footer>
         </div>
-        <!-- SCRIPTS -->
 
+        <!-- Portfolio Modals -->
+        <!-- Mock Restaurant -->
+        <div
+            class="modal fade"
+            id="mock-restaurant"
+            tabindex="-1"
+            aria-labelledby="exampleModalLabel"
+            aria-hidden="true"
+        >
+            <div class="modal-dialog mw-100 p-5">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <!-- <h5 class="modal-title">Project 1</h5> -->
+                        <button
+                            type="button"
+                            class="btn-close"
+                            data-bs-dismiss="modal"
+                            aria-label="Close"
+                        ></button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <img
+                                        class="img-fluid"
+                                        src="./images/projects/restuarant.PNG"
+                                    />
+                                </div>
+                                <div class="col-md-6">
+                                    <h4 class="project-title">
+                                        Mock Restaurant Project
+                                    </h4>
+                                    <p class="project-text">
+                                        A mock Restaurant Project I created
+                                        after attending an Html, CSS and
+                                        Bootstrap 5 class
+                                    </p>
+                                    <div class="made-with">
+                                        <p class="fw-bold">Made With:</p>
+                                        <ul class="technologies">
+                                            <li>HTML</li>
+                                            <li>CSS</li>
+                                            <li>Bootstrap 5</li>
+                                        </ul>
+                                    </div>
+                                    <div class="project-links mt-4">
+                                        <a
+                                            class="btn btn-secondary rounded-pill me-2"
+                                            href="https://mybootstrap-restaurant.netlify.app/"
+                                            target="_blank"
+                                        >
+                                            <i class="fa-solid fa-eye"></i>
+                                            <span class="project-option"
+                                                >View Live</span
+                                            >
+                                        </a>
+                                        <a
+                                            class="btn btn-secondary rounded-pill"
+                                            href="https://github.com/iamvusumzi/mock-restaurant"
+                                            target="_blank"
+                                        >
+                                            <i class="fa-brands fa-github"></i>
+                                            <span class="project-option"
+                                                >View Github</span
+                                            >
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Library System -->
+        <div
+            class="modal fade"
+            id="library-system"
+            tabindex="-1"
+            aria-labelledby="exampleModalLabel"
+            aria-hidden="true"
+        >
+            <div class="modal-dialog mw-100 p-5">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button
+                            type="button"
+                            class="btn-close"
+                            data-bs-dismiss="modal"
+                            aria-label="Close"
+                        ></button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <img
+                                        class="img-fluid"
+                                        src="./images/projects/library-system.PNG"
+                                    />
+                                </div>
+                                <div class="col-md-6">
+                                    <h4 class="project-title">
+                                        Online Library System
+                                    </h4>
+                                    <p class="project-text">
+                                        An online library system project that I
+                                        developed as my Software Engineering
+                                        Capstone Project.
+                                    </p>
+                                    <div class="made-with">
+                                        <p class="fw-bold">Made With:</p>
+                                        <ul class="technologies">
+                                            <li>Bootstrap Template</li>
+                                            <li>Nodejs and Expressjs</li>
+                                            <li>MongoDB</li>
+                                        </ul>
+                                    </div>
+                                    <div class="project-links mt-4">
+                                        <a
+                                            class="btn btn-secondary rounded-pill me-2"
+                                            href="https://rocky-island-86328.herokuapp.com/admin-login"
+                                            target="_blank"
+                                        >
+                                            <i class="fa-solid fa-eye"></i>
+                                            <span class="project-option"
+                                                >View Live</span
+                                            >
+                                        </a>
+                                        <a
+                                            class="btn btn-secondary rounded-pill"
+                                            href="https://github.com/iamvusumzi/library-system"
+                                            target="_blank"
+                                        >
+                                            <i class="fa-brands fa-github"></i>
+                                            <span class="project-option"
+                                                >View Github</span
+                                            >
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- HTML Portfolio -->
+        <div
+            class="modal fade"
+            id="html-css-portfolio"
+            tabindex="-1"
+            aria-labelledby="exampleModalLabel"
+            aria-hidden="true"
+        >
+            <div class="modal-dialog mw-100 p-5">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button
+                            type="button"
+                            class="btn-close"
+                            data-bs-dismiss="modal"
+                            aria-label="Close"
+                        ></button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <img
+                                        class="img-fluid"
+                                        src="./images/projects/html-css-portfolio.PNG"
+                                    />
+                                </div>
+                                <div class="col-md-6">
+                                    <h4 class="project-title">
+                                        Mock Portfolio
+                                    </h4>
+                                    <p class="project-text">
+                                        A project designed for ironing out my
+                                        development abilities in HTML, CSS and
+                                        Mobile responsiveness
+                                    </p>
+                                    <div class="made-with">
+                                        <p class="fw-bold">Made With:</p>
+                                        <ul class="technologies">
+                                            <li>HTML</li>
+                                            <li>CSS</li>
+                                        </ul>
+                                    </div>
+                                    <div class="project-links mt-4">
+                                        <a
+                                            class="btn btn-secondary rounded-pill me-2"
+                                            href="https://vusumzi.netlify.app/"
+                                            target="_blank"
+                                        >
+                                            <i class="fa-solid fa-eye"></i>
+                                            <span class="project-option"
+                                                >View Live</span
+                                            >
+                                        </a>
+                                        <a
+                                            class="btn btn-secondary rounded-pill"
+                                            href="https://github.com/iamvusumzi/portfolio"
+                                            target="_blank"
+                                        >
+                                            <i class="fa-brands fa-github"></i>
+                                            <span class="project-option"
+                                                >View Github</span
+                                            >
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Bootstrap Porfolio -->
+        <div
+            class="modal fade"
+            id="bootstrap-portfolio"
+            tabindex="-1"
+            aria-labelledby="exampleModalLabel"
+            aria-hidden="true"
+        >
+            <div class="modal-dialog mw-100 p-5">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button
+                            type="button"
+                            class="btn-close"
+                            data-bs-dismiss="modal"
+                            aria-label="Close"
+                        ></button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <img
+                                        class="img-fluid"
+                                        src="./images/projects/bootstrap-portfolio-mock.PNG"
+                                    />
+                                </div>
+                                <div class="col-md-6">
+                                    <h4 class="project-title">
+                                        Mock Portfolio
+                                    </h4>
+                                    <p class="project-text">
+                                        A project I did to nurture my Html, CSS,
+                                        Bootstrap 5 and mobile responsiness
+                                        abilities
+                                    </p>
+                                    <div class="made-with">
+                                        <p class="fw-bold">Made With:</p>
+                                        <ul class="technologies">
+                                            <li>HTML</li>
+                                            <li>CSS</li>
+                                        </ul>
+                                    </div>
+                                    <div class="project-links mt-4">
+                                        <a
+                                            class="btn btn-secondary rounded-pill me-2"
+                                            href="https://boostrap-porfolio.netlify.app/"
+                                            target="_blank"
+                                        >
+                                            <i class="fa-solid fa-eye"></i>
+                                            <span class="project-option"
+                                                >View Live</span
+                                            >
+                                        </a>
+                                        <a
+                                            class="btn btn-secondary rounded-pill"
+                                            href="https://github.com/iamvusumzi/bootstrap-portfolio"
+                                            target="_blank"
+                                        >
+                                            <i class="fa-brands fa-github"></i>
+                                            <span class="project-option"
+                                                >View Github</span
+                                            >
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- SCRIPTS -->
         <!-- For animation -->
         <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
         <script>

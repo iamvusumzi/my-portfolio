@@ -38,6 +38,7 @@ body {
 .overflow {
     height: 110px;
     position: fixed;
+    z-index: 1000;
 }
 .rightbar {
     color: white;
@@ -105,6 +106,7 @@ nav {
     font-weight: 600;
     border-radius: 300px;
     margin-left: -190px;
+    margin-top: 100px;
 }
 h2 {
     font-size: 3.5rem;
@@ -115,6 +117,14 @@ h3 {
     color: #68e0cf;
     font-size: 16px;
     text-transform: uppercase;
+}
+#landing a {
+    height: 64px;
+    width: 200px;
+    border: 0.5px solid grey;
+    text-decoration: none;
+    color: white;
+    background-color: #373b40;
 }
 
 /* About */
@@ -208,7 +218,7 @@ h3 {
     position: relative;
 }
 #portfolio .project-details {
-    background: rgba(104, 224, 207, 0.9);
+    background: rgba(104, 224, 207, 0.95);
     color: #373b40;
     position: absolute;
     top: 0;
@@ -225,13 +235,6 @@ h3 {
     opacity: 0;
     transition: all 0.2s linear;
 }
-/* #porfolio .project-details p {
-    text-align: center;
-} */
-
-#portfolio .project:hover {
-    color: #68e0cf;
-}
 
 #portfolio .project-title {
     letter-spacing: 0.5px;
@@ -240,14 +243,26 @@ h3 {
     font-size: 18px;
     font-weight: 550;
 }
+.modal-body {
+    color: #373b40;
+}
+.modal-body .project-title {
+    font-size: 30px;
+    font-weight: 600;
+    margin-bottom: 30px;
+}
 
 #portfolio .project:hover .project-details {
+    box-shadow: 5px 5px 50px #373b40;
     transform: scale(0.9);
     opacity: 1;
 }
 
-.project-details a {
-    /* color: white; */
+#portfolio .project-details button {
+    border-radius: 0;
+    color: #373b40;
+    height: 64px;
+    padding: 5px 25px;
 }
 
 /* Testimonial */
@@ -289,12 +304,16 @@ h3 {
 }
 #contact form input {
     height: 64px;
+    padding: 5px 25px;
+    color: white;
     /* border: none; */
     border: 0.5px solid grey;
     background-color: #373b40;
 }
 
 #contact form textarea {
+    color: white;
+    padding: 20px 25px;
     border: 0.5px solid grey;
     background-color: #373b40;
     height: 150px;
@@ -328,6 +347,25 @@ footer p:last-child {
     margin: 0;
     font-size: 11px;
 }
+
+/* Button and links hover */
+#landing a:hover,
+.social-media i:hover,
+#contact button:hover,
+nav #logo:hover,
+nav #nav-toggler span:hover,
+#nav-links a:hover,
+.owl-nav span:hover,
+#offcanvas-links a:hover,
+.offcanvas #offcanvas-close,
+#portfolio .project-details button:hover,
+#portfolio .project:hover,
+.modal-body .project-links a:hover {
+    color: #68e0cf;
+}
+#nav-links .active {
+    color: #68e0cf;
+}
 @media screen and (max-width: 1280px) {
     .leftbar {
         width: 35vw;
@@ -350,7 +388,9 @@ footer p:last-child {
         width: 100%;
         height: 70vh;
         position: static;
-        background-size: top;
+        background-image: url(./images/vusumzi-landscape.jpg);
+        background-size: cover;
+        background-position: center;
     }
 
     .wrapper {
@@ -373,7 +413,7 @@ footer p:last-child {
         text-align: center;
     }
     #landing .heading h1 {
-        margin: -280px auto;
+        margin: -250px auto;
         width: 450px;
         height: 450px;
         padding: 110px 80px;
@@ -385,6 +425,10 @@ footer p:last-child {
 }
 
 @media screen and (max-width: 768px) {
+    .leftbar {
+        /* background-image: url(./images/vusumzi-min.JPG); */
+        background-position: top;
+    }
     #landing .heading h1 {
         font-size: 35px;
         padding: 80px 20px;
