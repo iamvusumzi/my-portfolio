@@ -20,7 +20,8 @@ body {
     height: 100vh;
     position: fixed;
     z-index: -1;
-    background-image: url(./images/vusumzi-min.JPG);
+    /* background-image: url(./images/vusumzi-min.JPG); */
+    background-image: url(./images/thumb.JPEG);
     background-position: top;
     background-size: cover;
     object-fit: cover;
