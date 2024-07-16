@@ -389,9 +389,9 @@ nav #nav-toggler span:hover,
         width: 100%;
         height: 70vh;
         position: static;
-        background-image: url(./images/vusumzi-landscape.jpg);
+        background-image: url(./images/thumb.JPEG);
         background-size: cover;
-        background-position: center;
+        background-position: top;
     }
 
     .wrapper {
@@ -427,7 +427,7 @@ nav #nav-toggler span:hover,
 
 @media screen and (max-width: 768px) {
     .leftbar {
-        /* background-image: url(./images/vusumzi-min.JPG); */
+        background-image: url(./images/thumb.JPEG);
         background-position: top;
     }
     #landing .heading h1 {
